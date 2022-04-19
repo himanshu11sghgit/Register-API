@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
+import os
+import django_heroku
 from datetime import timedelta
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -172,3 +174,10 @@ CORS_ALLOWED_ORIGINS = [
 # Custom User Model Settings
 
 AUTH_USER_MODEL = "accounts.User"
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+
+# Activate Django-Heroku
+
+django_heroku.settings(locals())
