@@ -1,3 +1,9 @@
+Project is deployed on Heroku Platform:
+link: https://register-class-based-api.herokuapp.com/api/user/login/
+
+
+
+
 In this API, 
 
 Firstly User have to register itself
