@@ -21,7 +21,6 @@ from .serializers import (
     UserRegistrationSerializer,
     UserLoginSerializer,
     UserProfileSerializer,
-    UserChangePasswordSerializer,
     UserListSerializer,
 )
 from .renderers import UserRenderer
@@ -78,22 +77,6 @@ class UserProfileView(APIView):
         serializer = UserProfileSerializer(instance=request.user)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
-
-class UserChangePasswordView(APIView):
-    authentication_classes = (SessionAuthentication,)
-    permission_classes = (IsAuthenticated,)
-    # renderer_classes = (UserRenderer,)
-
-    def post(self, request):
-        serializer = UserChangePasswordSerializer(
-            data=request.data, 
-            context={'user': request.user
-        })
-
-        if serializer.is_valid(raise_exception=True):
-            return Response({'msg': 'Password Changed successfully'}, status=status.HTTP_200_OK)
-        
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
         
 
 class UserListView(ListAPIView):
@@ -116,4 +99,5 @@ class UserRetrieveView(RetrieveAPIView):
         serializer = UserListSerializer(instance=user)
 
         return Response(serializer.data, status=status.HTTP_200_OK)
+
 
