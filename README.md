@@ -1,22 +1,22 @@
 In this API, 
 
 Firstly User have to register itself
-url: 
+url: http://127.0.0.1:8000/api/user/register/
 
 then, after User can login and because an Authenticated User
-url:
+url: http://127.0.0.1:8000/api/user/login/
 
 Now User can access to all the details of other User's except Password
-url:
+url: http://127.0.0.1:8000/api/user/
 
 User can also get individually details of all User
-url:
+url: http://127.0.0.1:8000/api/user/<int:pk>/
 
 * ----------------------------------------------------------- *
 
 I Assume that you are using Postman:
+Postman is recommended if you want to see Access Tokens.
 
-When I will share the postman link also
 
 * ------------------------------------------------------------- *
 
@@ -27,5 +27,4 @@ you can login using Session Authentication (on the top right cornor). It is also
 * ------------------------------------------------------------- *
 
 
-you cannot see token it you are not using Postman.
-Postman use is Recommended
+you cannot see token on Django Rest Framework Default API View Interface.
