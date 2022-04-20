@@ -1,6 +1,6 @@
                                                     About the Project
         
-    This is a User Registeration and Login API which is created using Django, Django Rest Framework. This project named as RegisterAPI. In this project, User first have to register himself so he/she become an Authenticated User. After the registeration is successfull he can login and get access to all Information about the other user (except Password). Pagination is applied on when user sent an HTTP Request: GET to collect all data. Using Page Number Pagination Class provided in DRF. This pagination is less complicated than LimitOffset and Cursor ones. User can also access to information about a particular user just by passing his id.
+    This is a User Registration and Login API which is created using Django, Django Rest Framework. This project named as RegisterAPI. In this project, User first have to register himself so he/she become an Authenticated User. After the registeration is successfull he can login and get access to all Information about the other user (except Password). Pagination is applied on when user sent an HTTP Request: GET to collect all data. Using Page Number Pagination Class provided in DRF. This pagination is less complicated than LimitOffset and Cursor ones. User can also access to information about a particular user just by passing his id.
             
 
 
@@ -30,9 +30,7 @@ In this API,
     url: http://127.0.0.1:8000/api/user/register/
 
 (b)     Then, after User can login and because an Authenticated User
-    url: http://127.0.0.1:8000/api/user/login/
-
-(c)     Once you logged in you can access to all the data without passing ACCESS TOKENS until you logged out.
+    url: http://127.0.0.1:8000/api/user/login/.
 
 (c)     Now User can access to all the details of other User's except Password
     url: http://127.0.0.1:8000/api/user/
