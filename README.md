@@ -1,4 +1,4 @@
-Project is deployed on Heroku Platform:
+Project is deployed on Heroku Platform
 link: https://register-class-based-api.herokuapp.com/api/user/login/
 
 
@@ -34,3 +34,11 @@ you can login using Session Authentication (on the top right cornor). It is also
 
 
 you cannot see token on Django Rest Framework Default API View Interface.
+
+
+* --------------------------------------------------------------- *
+LOGOUT:
+    You can logout using Session Authentication on the default API user interface provided by DRF. Once you logined you become aa authenticated user and your email address will be shown on the TOP-RIGHT cornor of the screen. Click on the email address to logout.
+
+    
+
