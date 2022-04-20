@@ -34,8 +34,10 @@ In this API,
 (a)     Firstly User have to register itself
     url: http://127.0.0.1:8000/api/user/register/
 
-(b)     then, after User can login and because an Authenticated User
+(b)     Then, after User can login and because an Authenticated User
     url: http://127.0.0.1:8000/api/user/login/
+
+(c)     Once you logged in you can access to all the data without passing ACCESS TOKENS until you logged out.
 
 (c)     Now User can access to all the details of other User's except Password
     url: http://127.0.0.1:8000/api/user/

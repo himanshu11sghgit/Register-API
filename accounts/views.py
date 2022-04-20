@@ -39,7 +39,6 @@ def get_tokens_for_user(user):
 
 
 class UserRegistrationView(APIView):
-    # renderer_classes = (UserRenderer,)
 
     def post(self, request):
         serializer = UserRegistrationSerializer(data=request.data)
@@ -51,7 +50,6 @@ class UserRegistrationView(APIView):
 
 
 class UserLoginView(APIView):
-    # renderer_classes = (UserRenderer,)
 
     def post(self, request):
         serializer = UserLoginSerializer(data=request.data)
@@ -71,7 +69,6 @@ class UserLoginView(APIView):
 class UserProfileView(APIView):
     authentication_classes = (SessionAuthentication,)
     permission_classes = (IsAuthenticated,)
-    # renderer_classes = (UserRenderer,)
 
     def get(self, request):
         serializer = UserProfileSerializer(instance=request.user)
@@ -85,7 +82,6 @@ class UserListView(ListAPIView):
     authentication_classes = (SessionAuthentication,)
     permission_classes = (IsAuthenticated,)
     pagination_class = MyPageNumberPagination
-    # renderer_classes = (UserRenderer,)
 
     
 
