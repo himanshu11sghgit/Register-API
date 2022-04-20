@@ -1,11 +1,6 @@
                                                     About the Project
         
-                This is a User Registeration and Login API which is created using Django, Django Rest Framework. This project named 
-    as RegisterAPI. In this project, User first have to register himself so he/she become an Authenticated User. After the 
-    registeration is successfull he can login and get access to all Information about the other user (except Password). 
-    Pagination is applied on when user sent an HTTP Request: GET to collect all data. Using Page Number Pagination Class provided 
-    in DRF. This pagination is less complicated than LimitOffset and Cursor ones. User can also access to information about a 
-    particular user just by passing his id.
+    This is a User Registeration and Login API which is created using Django, Django Rest Framework. This project named as RegisterAPI. In this project, User first have to register himself so he/she become an Authenticated User. After the registeration is successfull he can login and get access to all Information about the other user (except Password). Pagination is applied on when user sent an HTTP Request: GET to collect all data. Using Page Number Pagination Class provided in DRF. This pagination is less complicated than LimitOffset and Cursor ones. User can also access to information about a particular user just by passing his id.
             
 
 
@@ -52,9 +47,7 @@ In this API,
 (a)     I Assume that you are using Postman:
     Postman is recommended if you want to see Access Tokens.
 
-(b)     If you are not using Postman that you can get Response from the API using Django Rest Framework default API View Interface.
-    you can login using Session Authentication (on the top right cornor). It is also responsible for logout (after you successfully 
-    loggedin).
+(b)     If you are not using Postman that you can get Response from the API using Django Rest Framework default API View Interface. You can login using Session Authentication (on the top right cornor). It is also responsible for logout (after you successfully loggedin).
 
 (c)     you cannot see token on Django Rest Framework Default API View Interface.
 
